@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en" class="h-100" data-bs-theme="auto">
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <title>Sticky Footer Navbar Template · Bootstrap v5.3</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/sticky-footer-navbar/">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- Favicons -->
+    <link rel="icon" href="img/unc.png">
+    
+
+    <!-- Custom styles for this template -->
+    <link href="css/sticky-footer-navbar.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/custom.css"> 
+  </head>
+
+  <body class="d-flex flex-column h-100 about-background">
+    
+   <header>
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+     <div class="container-fluid">
+         <!-- brand -->    
+         <a class="navbar-brand" href="#">Margot Bohlin</a>
+         
+         <!-- responsive "hamburger menu"-->
+         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+         </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+        
+          <!-- navigation menu-->
+          <ul class="navbar-nav me-auto mb-2 mb-md-0">
+           <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+           </li>
+           <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="about.html">About</a>
+           </li>
+           <li class="nav-item">
+            <a class="nav-link" href="classes.html">Classes</a>
+           </li>
+           <li class="nav-item">
+            <a class="nav-link" href="interests.html">Interests</a>
+           </li>
+          </ul>
+        </div>
+     </div>
+    </nav>
+   </header>
+
+   <!-- Begin page content -->
+   <main class="flex-shrink-0">
+     <div class="container">
+      <h1 class="mt-5">About Me</h1>
+      <p class="lead">Hi! My name is Margot Bohlin and I am a third year computer science student at the University of North 
+        Carolina at Chapel Hill. I am also studying data science and information and library science as an undergrad. I am from Durham, 
+        North Carolina, and plan on studying abroad in Spain during the spring of 2024 to build more independence.</p>
+        <img width="300" height= "400" src="bohlin-margot-business.jpg" alt="Picture of me"> <br>
+        <a class="btn btn-outline-dark" href="bohlin-margot-resume.pdf" target="_blank"> My Resume </a>
+        <p> </p>
+        <a href = "mailto: mbohlin@unc.edu">Contact Me</a>
+        <p> </p>
+        <h3 id="demo">Click below to learn my favorite color.</h3>
+                        <button class="btn btn-lg btn-light" type="button" onclick='document.getElementById("demo").innerHTML = "Green"'>Green, Blue, or Orange?</button>
+                        <p> </p>
+     </div>
+   </main>
+   
+   <!-- Begin footer content -->
+   <footer class="footer mt-auto py-3">
+    <div class="container">
+    <span class="text-body-secondary">Copyright © Margot Bohlin
+      <script 
+   >
+function date_ddmmmyy(date)
+{
+  var d = date.getDate();
+  var m = date.getMonth() + 1;
+  var y = date.getYear();
+  if(y >= 2000)
+  {
+    y -= 2000;
+  }
+  if(y >= 100)
+  {
+    y -= 100;
+  }
+  var mmm = 
+    ( 1==m)?'Jan':( 2==m)?'Feb':(3==m)?'Mar':
+    ( 4==m)?'Apr':( 5==m)?'May':(6==m)?'Jun':
+    ( 7==m)?'Jul':( 8==m)?'Aug':(9==m)?'Sep':
+    (10==m)?'Oct':(11==m)?'Nov':'Dec';
+
+  return "" +
+    (d<10?"0"+d:d) + "-" +
+    mmm + "-" +
+    (y<10?"0"+y:y);
+}
+function date_lastmodified()
+{
+  var lmd = document.lastModified;
+  var s   = "Unknown";
+  var d1;
+  if(0 != (d1=Date.parse(lmd)))
+  {
+    s = "" + date_ddmmmyy(new Date(d1));
+  }
+
+  return s;
+}
+document.write( 
+  "This page was updated on " + 
+  date_lastmodified() );
+</script>
+    </span>
+    </div>
+   </footer>
+   <script src="js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
