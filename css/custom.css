@@ -1,0 +1,22 @@
+.interests-background {
+ background-color: rgb(140, 170, 226);
+}
+.home-background {
+    background-color: rgb(140, 170, 226);
+}
+.classes-background {
+    background-color: rgb(140, 170, 226);
+}
+.about-background {
+    background-color: rgb(140, 170, 226);
+}
+
+footer {
+    background-color: #13294B;
+}
+
+/* footer color hack */
+.text-body-secondary {
+    --bs-text-opacity: 1;
+    color: rgba(255, 255, 255, 0.75) !important;
+  }
